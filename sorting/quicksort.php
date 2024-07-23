@@ -20,9 +20,11 @@ function quickSort($array){
                 array_push($array_right, $array[$i]);
             }
         }
-        
+        return array_merge(quickSort($array_left), array($pivote), quickSort($array_right));
     }
 }
+
+echo json_encode(quickSort([5,3,8,4,6]));
 
 
 ?>
