@@ -6,6 +6,7 @@ class Aerolinea{
     public $nombre;
     public $identificador;
     public $tipo_aerolinea;
+    private $servicio;
 
     /** constructor() => inicializar un objeto */
     public function __construct($num_aviones, $nombre, $codigo, $tipo)
@@ -15,6 +16,15 @@ class Aerolinea{
         $this->nombre = $nombre;
         $this->identificador = $codigo;
         $this->tipo_aerolinea = $tipo;
+    }
+
+    //get y set
+    public function setServicio($servicio){
+        $this->servicio = $servicio;
+    }
+
+    public function getServicio(){
+        return $this->servicio;
     }
 
     //metodo para verificar la informacion de la aerolinea
