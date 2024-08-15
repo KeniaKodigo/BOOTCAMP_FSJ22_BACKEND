@@ -1,0 +1,38 @@
+[
+    {
+        "codigo_empleado": "CF001",
+        "nombre": "Carlos Flores",
+        "telefono": 75341256,
+        "correo": "carlosf@gmail.com",
+        "cargo": "Gerente",
+        "sueldo": 750,
+        "password": "carlos"
+    },
+    {
+        "codigo_empleado": "SB001",
+        "nombre": "Sandra Chavez",
+        "telefono": 67893245,
+        "correo": "sandra@gmail.com",
+        "cargo": "Progamadora Web",
+        "sueldo": 600,
+        "password": "sandra"
+    },
+    {
+        "codigo_empleado": "R002",
+        "nombre": "Ronee Vasquez",
+        "telefono": 76542312,
+        "correo": "ronee@gmail.com",
+        "cargo": "Cajero",
+        "sueldo": 475,
+        "password": "ronee123"
+    },
+    {
+        "codigo_empleado": "A002",
+        "nombre": "Andrea Chacon",
+        "telefono": 65783423,
+        "correo": "andrea@gmail.com",
+        "cargo": "Asistente de Ventas",
+        "sueldo": 580,
+        "password": "andreronee123"
+    }
+]

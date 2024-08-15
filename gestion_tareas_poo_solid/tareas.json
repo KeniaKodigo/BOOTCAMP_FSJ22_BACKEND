@@ -1,0 +1,10 @@
+[
+    {
+        "id_tarea": 1,
+        "titulo": "Crear diagrama de clases",
+        "descripcion": "diagrama para la gestion de tareas",
+        "fecha_creacion": "2024-08-15",
+        "estado": "Completada",
+        "codigo_empleado": "SB001"
+    }
+]
