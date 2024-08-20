@@ -63,6 +63,7 @@ class Tareas{
         $tareas = self::cargarTareas(); //[]
         $tarea_encontrada = false;
         //iteramos el arreglo para verificar la tarea por su id
+        //& => hace una referencia a la informacion de las tareas del arreglo
         foreach($tareas as &$tarea){
             if($tarea['id_tarea'] == $id){
                 //echo "Tarea encontrada";
