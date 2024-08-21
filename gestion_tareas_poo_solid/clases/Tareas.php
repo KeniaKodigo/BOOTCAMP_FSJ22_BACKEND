@@ -35,7 +35,11 @@ class Tareas{
         ];
         //guardamos la informacion en el json ya codificado
         self::guardarTarea($array_tareas);
-        return "Se ha guardado la tarea correctamente";
+        //return "Se ha guardado la tarea correctamente";
+        //recargadno la pagina de lista_tareas para visualizar la nueva tarea en la tabla
+        echo "<script>
+            window.location.href = 'lista_tareas.php'
+        </script>";
     }
 
     //metodos estaticos
@@ -79,7 +83,10 @@ class Tareas{
         if($tarea_encontrada){
             //actualizamos el json
             self::guardarTarea($tareas);
-            echo "Tarea actualizada";
+            echo "<script>
+                window.location.href = 'lista_tareas.php'
+            </script>";
+            //echo "Tarea actualizada";
         }else{
             echo "Tarea con el ID $id no fue encontrada";
         }

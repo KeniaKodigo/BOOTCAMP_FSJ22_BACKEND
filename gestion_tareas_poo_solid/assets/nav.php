@@ -10,7 +10,7 @@
             <a class="nav-link active" aria-current="page" href="./index.php">Empleados</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Lista Tareas</a>
+            <a class="nav-link" href="./lista_tareas.php">Lista Tareas</a>
             </li>
         </ul>
         </div>

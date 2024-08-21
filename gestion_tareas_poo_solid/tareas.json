@@ -20,7 +20,31 @@
         "titulo": "prueba 500",
         "descripcion": "status http",
         "fecha_creacion": "2024-08-20",
+        "estado": "En Proceso",
+        "codigo_empleado": "NM005"
+    },
+    {
+        "id_tarea": "4",
+        "titulo": "prueba",
+        "descripcion": "prueba",
+        "fecha_creacion": "2024-08-21",
         "estado": "Pendiente",
         "codigo_empleado": "NM005"
+    },
+    {
+        "id_tarea": "5",
+        "titulo": "Aplicaciones M\u00f3viles con Flutter",
+        "descripcion": "Curso para aprender react desde cero con conocimientos previos de html y js",
+        "fecha_creacion": "2024-08-21",
+        "estado": "Completada",
+        "codigo_empleado": "A002"
+    },
+    {
+        "id_tarea": "6",
+        "titulo": "Documentar codigo",
+        "descripcion": "documenta el codigo backend de php y poo...",
+        "fecha_creacion": "2024-08-21",
+        "estado": "Pendiente",
+        "codigo_empleado": "PR234"
     }
 ]

@@ -36,6 +36,16 @@
 
         // echo json_encode(Gerente::verTareas());
         // echo json_encode(Gerente::cargarListaEmpleados());
+
+        //Gerente::crearTarea(11,"prueba 500","status http","NM005");
+
+        // echo $tarea;
+        // $tarea = new Tareas(20,"Crear diagrama de clases","diagrama para la gestion de tareas","SB001");
+        // $tarea->agregarTarea();
+        // echo "<script>
+        //     window.location.href = 'index.php'
+        // </script>";
+        Tareas::cambiarEstado(3, "En Proceso");
     ?>
 </body>
 </html>
