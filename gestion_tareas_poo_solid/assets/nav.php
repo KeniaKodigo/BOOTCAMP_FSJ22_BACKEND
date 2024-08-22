@@ -6,11 +6,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <?php 
+                //validando las vistas del gerente y empleado
+                if($_SESSION['cargo'] == "Gerente"){
+            ?>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./home_gerente.php">Empleados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./lista_tareas.php">Lista Tareas</a>
+                </li>
+            <?php }else{ ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="./home_empleado.php">Tareas Asignadas</a>
+                </li>
+            <?php } ?>
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.php">Empleados</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./lista_tareas.php">Lista Tareas</a>
+                <a href="./index.php" class="btn btn-danger">Cerrar Sesion</a>
             </li>
         </ul>
         </div>

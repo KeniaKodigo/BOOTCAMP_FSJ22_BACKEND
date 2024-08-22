@@ -91,6 +91,30 @@ class Tareas{
             echo "Tarea con el ID $id no fue encontrada";
         }
     }
+
+    //Metodo para rescatar tareas por empleado
+    public static function tareasByEmpleado($id_empleado){
+        //iterar el arreglo de las tareas
+        $lista_tareas = self::cargarTareas(); //[]
+        //declaramos un arreglo que va manejar solo tareas de un empleado especifico
+        $tareas_empleado = [];
+
+        foreach($lista_tareas as $tarea){
+            //comparamos el id del empleado con el parametro del usuario
+            if($tarea['codigo_empleado'] == $id_empleado){
+                $tareas_empleado[] = [
+                    'id_tarea' => $tarea['id_tarea'],
+                    'titulo' => $tarea['titulo'],
+                    'descripcion' => $tarea['descripcion'], 
+                    'fecha_creacion' => $tarea['fecha_creacion'],
+                    'estado' => $tarea['estado'],
+                    'codigo_empleado' => $tarea['codigo_empleado']
+                ];
+            }
+        }
+        //retornamos el arreglo con la informacion de las tareas por empleado
+        return $tareas_empleado;
+    }
 }
 
 /**

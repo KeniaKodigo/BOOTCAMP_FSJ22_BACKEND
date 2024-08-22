@@ -1,9 +1,11 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>Home</title>
 </head>
 <body>
@@ -38,17 +40,16 @@
             <?php 
                 #Iteramos la informacion del arreglo de tareas 
                 foreach($lista_tareas as $tarea){
-                    $color_estado = "";
-                    //switch para cambiar el color del estado
+                    $clase_estado = "";
                     switch($tarea['estado']){
                         case "Pendiente":
-                            $color_estado = 'yellow';
+                            $clase_estado = 'pendiente'; 
                             break;
                         case "En Proceso":
-                            $color_estado = 'blue';
+                            $clase_estado = 'proceso';
                             break;
                         case "Completada":
-                            $color_estado = 'green';
+                            $clase_estado = 'completado';
                             break;
                     }
             ?>
@@ -57,7 +58,7 @@
                     <td><?php echo $tarea['id_tarea'];  ?></td>
                     <td><?php echo $tarea['titulo'];  ?></td>
                     <td><?php echo $tarea['fecha_creacion'];  ?></td>
-                    <td style="color: <?php echo $color_estado ?>"><?php echo $tarea['estado'];  ?></td>
+                    <td class="<?php echo $clase_estado ?>"><?php echo $tarea['estado'];  ?></td>
                     <td><?php echo $tarea['codigo_empleado'];  ?></td>
                     <td>
                         <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalEstado<?php echo $tarea['id_tarea'];  ?>">Cambiar Estado</button>

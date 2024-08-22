@@ -45,7 +45,8 @@
         // echo "<script>
         //     window.location.href = 'index.php'
         // </script>";
-        Tareas::cambiarEstado(3, "En Proceso");
+        //Tareas::cambiarEstado(3, "En Proceso");
+        echo json_encode(Tareas::tareasByEmpleado("CF001"));
     ?>
 </body>
 </html>

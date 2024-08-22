@@ -5,4 +5,5 @@ class Administrador extends Empleados{
 
 }
 
+
 ?>

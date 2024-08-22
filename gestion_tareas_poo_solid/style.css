@@ -1,0 +1,14 @@
+.pendiente {
+    color: #ff8400 !important;
+    font-weight: bold;
+}
+
+.proceso {
+    color: #00a2ff !important;
+    font-weight: bold;
+}
+
+.completado {
+    color: #0b5e08 !important;
+    font-weight: bold;
+}
