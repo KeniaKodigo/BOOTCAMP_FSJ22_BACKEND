@@ -20,6 +20,17 @@ class Gerente extends Empleados{
     }
 }
 
+// Gerente::crearTarea();
+// Gerente::crearTarea();
+
+// $objeto1 = new Gerente();
+// $objeto1->crearTarea();
+
+// $objeto2 = new Gerente();
+// $objeto2->crearTarea();
+
+// $objeto3 = new Gerente();
+// $objeto3->crearTarea();
 
 
 ?>

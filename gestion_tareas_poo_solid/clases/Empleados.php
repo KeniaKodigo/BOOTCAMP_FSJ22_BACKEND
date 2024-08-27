@@ -1,5 +1,5 @@
 <?php
-
+//clase base
 class Empleados{
     public $codigo_empleado;
     public $nombre;
