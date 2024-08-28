@@ -14,8 +14,9 @@ class Database {
     }
 }
 
+//Evitar tantas instancias (mejor manejamos una instancia)
 //estamos creando instancias
-$db1 = new Database();
+$db1 = new Database(); //conexion
 //otro usuario
 $db2 = new Database();
 //otro user
@@ -25,7 +26,6 @@ $db3 = new Database();
 #Refactorizando el codigo con el patron Singleton
 
 class DatabaseSingleton{
-    
     //creamos un atributo estatico, vamos  verificar si la instancia existe
     private static $instancia = null;
     //atributo que recoge la informacion de la bd

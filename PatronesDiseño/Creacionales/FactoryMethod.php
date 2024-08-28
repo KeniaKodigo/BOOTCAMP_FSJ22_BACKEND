@@ -53,9 +53,11 @@ class Proveedor implements FabricaUser{
 
 //Uso del metodo de fabrica
 class Usuarios{
+    //hace el uso de los tipos de usuario
     public static function crearUsuario($tipo){
         switch($tipo){
             case "Administrador":
+                //creamos un nuevo administrador
                 return new Administrador();
 
             case "Cliente":
