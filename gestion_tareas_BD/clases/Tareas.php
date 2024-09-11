@@ -32,7 +32,11 @@ class Tareas{
             $result = $query->execute(["$this->titulo","$this->descripcion","$this->fecha","$this->estado", $this->id_empleado]);
 
             if($result){
-                echo "Se ha guardado correctamente";
+                //echo "Se ha guardado correctamente";
+                //redireccionar
+                echo "<script>
+                    window.location.href = './index.php';
+                </script>";
             }
         }catch(PDOException $e){
             echo "Error: " . $e->getMessage();
@@ -48,7 +52,7 @@ class Tareas{
         $consulta = $conexion->query("select tareas.id_tarea, tareas.titulo, tareas.descripcion, tareas.fecha_creacion, tareas.estado, empleados.nombre as empleado from tareas inner join empleados on tareas.id_empleado = empleados.id_empleado");
         $consulta->execute();
         $resultado = $consulta->fetchAll(PDO::FETCH_ASSOC); //[]
-        return $resultado;
+        return $resultado; //[]
     }
 
     //metodo para actualizar el estado de la tarea
@@ -61,7 +65,10 @@ class Tareas{
             $resultado = $consulta->execute(["$nuevo_estado", $id_tarea]); //true / false
 
             if($resultado){
-                echo "Se ha actualizado el estado de la tarea";
+                //echo "Se ha actualizado el estado de la tarea";
+                echo "<script>
+                    window.location.href = './index.php';
+                </script>";
             }
         }catch(PDOException $e){
             echo "Error al actualizar el estado: " . $e->getMessage();

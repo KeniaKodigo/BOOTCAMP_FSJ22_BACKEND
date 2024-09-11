@@ -7,8 +7,9 @@ class Conexion{
         try{
             $conexion = 'mysql:host=localhost;dbname=gestion_tareas;charset=utf8';
             $usuario = 'root';
+            //informacion de la bd, usuario y password
             $pdo = new PDO($conexion, $usuario, "");
-            return $pdo;
+            return $pdo; //objeto
 
         }catch(PDOException $e){
             echo "Error de conexion " . $e->getMessage();
